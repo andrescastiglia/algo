@@ -1,0 +1,31 @@
+{
+	"name": "Algo",
+	"build": {
+		"context": "..",
+		"dockerfile": "Dockerfile"
+	},
+	"features": {
+		"ghcr.io/devcontainers/features/git:1": {
+			"version": "latest"
+		},
+		"ghcr.io/guiyomh/features/vim:0": {
+			"version": "latest"
+		}
+	},
+	"postCreateCommand": "cat /etc/os-release",
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"vadimcn.vscode-lldb",
+				"serayuzgur.crates",
+				"rust-lang.rust-analyzer",
+				"eamodio.gitlens",
+				"bungcip.better-toml"
+			]
+		}
+	},
+	"runArgs": [
+		"--name",
+		"dev-algo"
+	]
+}

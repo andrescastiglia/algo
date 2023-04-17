@@ -1,0 +1,15 @@
+[package]
+name = "binance"
+version = "0.1.0"
+edition = "2021"
+authors = [ "acastiglia@gmail.com" ]
+
+[dependencies]
+common = { path = "../common", version = "~0.1" }
+anyhow = "~1.0"
+log = "~0.4"
+parking_lot = "~0.12"
+serde = { version = "~1.0", features = [ "derive" ]}
+serde_json = "~1.0"
+tungstenite = { version = "~0.19", features = ["native-tls"] }
+url = "~2.3"

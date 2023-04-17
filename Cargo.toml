@@ -1,0 +1,3 @@
+[workspace]
+members = [ "assessment", "common", "binance", "bitstamp" ]
+default-members = [ "assessment" ]
