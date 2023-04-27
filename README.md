@@ -81,13 +81,13 @@ The output should be standardised to this type of format (with 10 asks and 10 bi
 {
     "spread": 2.72,
     "asks": [
-        { exchange: "binance", price: 8491.25, amount: 0.008 },
-        { exchange: "coinbase", price: 8496.37, amount: 0.0303 },
+        { "exchange": "binance","price": 8491.25, "amount": 0.008 },
+        { "exchange": "coinbase", "price": 8496.37, "amount": 0.0303 },
         ...
     ],
     "bids": [
-        { exchange: "binance", price: 8488.53, amount: 0.002 },
-        { exchange: "kraken", price: 8484.71, amount: 1.0959 },
+        { "exchange": "binance","price": 8488.53, "amount": 0.002 },
+        { "exchange": "kraken", "price": 8484.71, "amount": 1.0959 },
         ...
     ]
 }

@@ -44,7 +44,8 @@ pub struct Config {
 
 impl Config {
     pub fn as_ref() -> ConfigRef {
-        Arc::new(Self::parse())
+        let def: Vec<std::ffi::OsString> = vec![];
+        Arc::new(Self::parse_from(def))
     }
 
     pub fn pair(&self) -> &str {

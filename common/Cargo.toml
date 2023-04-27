@@ -6,6 +6,7 @@ authors = [ "acastiglia@gmail.com" ]
 build = "build.rs"
 
 [features]
+default = ["binance", "bitstamp"]
 binance = []
 bitstamp = []
 

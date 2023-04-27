@@ -30,7 +30,7 @@ impl Drop for Binance {
 }
 
 impl Provider for Binance {
-    fn name(&self) -> &str {
+    fn name(&self) -> &'static str {
         "Binance"
     }
 

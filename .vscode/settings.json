@@ -6,14 +6,10 @@
   "search.exclude": {
     "**/.git": true,
     "**/target": true,
-    "**/tmp": true
+    "**/tmp": true,
+    "*.lock": true
   },
   "[rust]": {
     "editor.defaultFormatter": "rust-lang.rust-analyzer"
-  },
-  "rust-analyzer.cargo.noDefaultFeatures": true,
-  "rust-analyzer.cargo.features": [
-    "binance",
-    "bitstamp"
-  ]
+  }
 }
